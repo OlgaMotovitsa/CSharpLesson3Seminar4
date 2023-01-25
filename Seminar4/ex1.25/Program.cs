@@ -1,7 +1,7 @@
 ﻿// Задача 26: Напишите программу, которая принимает на вход число
 // и выдает количество цифр в числе.
 // 78 -> 2
-Console.Clear();
+
 
 static int GetCountNum(int num)
 {
@@ -15,4 +15,4 @@ static int GetCountNum(int num)
     return count;
 }
 
-Console.WriteLine(GetCountNum(new Random().Next(1000, 100000)));
+Console.WriteLine(GetCountNum(new Random().Next(1000, 100000000)));
