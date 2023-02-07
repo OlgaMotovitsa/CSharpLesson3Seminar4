@@ -12,9 +12,11 @@ Console.WriteLine($"{num1} -> {GetSum(num1)}");
 static int GetSum(int num)
 {
     int res = 0;
-    for(int i = 1; i <= num; i++)
+    res += num % 10;
+    num /= 10;
+    if (num > 0)
     {
-        res += i;
+        res += GetSum(num);
     }
     return res;
 }
